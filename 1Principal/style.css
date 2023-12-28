@@ -1,0 +1,21 @@
+*{
+	color: white;
+	background-color: #4206CF;
+	margin: 10px;
+	
+}
+
+img{
+	height: 350px;
+	width: 500px;
+}
+
+
+ul{
+	margin: 10px;
+}
+
+.body{
+	width: 5px;
+	height: 5px;
+}
