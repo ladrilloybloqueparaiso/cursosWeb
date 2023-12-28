@@ -1,0 +1,19 @@
+*{
+	color: black;
+	background-color: #E5D620;
+}
+
+img{
+	height: 350px;
+	width: 350px;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+ul{
+	margin: 5px 5px 5px 5px;
+}
+
