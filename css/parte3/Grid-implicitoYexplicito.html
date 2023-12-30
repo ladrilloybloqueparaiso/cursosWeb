@@ -41,25 +41,26 @@
 	
 
 			<h1 class="h1" id="inicio">GRID IMPLICITO Y EXPLICITO</h1>
-		<article>
+		<article class="glass-effect">
 			<br>
+
 				<p class="ColorBlanco">Cuando trabajamos con CSS Grid, es posible definir la grilla de dos maneras: explícita e implícita. <br> Cada vez que nosotros definimos la cantidad de columnas o filas que tendrá la grilla, sin importar que tamaño tengan, estamos definiendo el grid de manera explícita, como en el ejemplo que puedes ver a continuación donde definimos que la grilla tendrá 12 columnas que se dividen el espacio equitativamente:<br><br>
 				grid-template-columns: repeat(12,1fr);<br><br>
 				Suponiendo que colocamos más de 12 elementos de la grilla, superando la cantidad de columnas establecidas. En dicho escenario, se creará una nueva fila para colocar los elementos que no cupieron en la primera fila. Esta segunda fila no fue definida explícitamente, por lo que se considera parte del grid implícito.<br><br>
 
+				Dentro de las 3 nuevas propiedades del grid implicito tenemos:<br>
+				grid-auto-rows:(igual que el templete)<br>
+				grid-auto-columns(igual que el templete)<br>
+				grid-auto-flow Row(Default), Column y Dense<br>
 
 				</p>
 
-
-
-
-
-				<img src="img/IntGrid/GridExplicito.PNG">
+				<img src="img/Grid/GridExplicito.PNG">
 				<br>
 					
-
+				<h1 class="h3">Grid explicito</h1>
 			<div class="Grid-container"> <!--Creamos un contenedor del grid como ejemplo-->
-				<div class="Grid-item-column">1</div>
+				<div class="Grid-item">1</div>
 				<div class="Grid-item">2</div>
 				<div class="Grid-item">3</div>
 				<div class="Grid-item">4</div>
@@ -68,8 +69,108 @@
 				<div class="Grid-item">7</div>
 				<div class="Grid-item">8</div>
 				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19</div>
+				<div class="Grid-item">20</div>
+				<div class="Grid-item">21</div>
 			</div>
 			<br>
+				<h1 class="h3">Grid implicito con row</h1>
+			<div class="Grid-container2"> 
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 rows</div>
+				<div class="Grid-item">20 rows</div>
+				<div class="Grid-item">21 rows </div>
+			</div>
+			<br>
+
+			<h1 class="h3">Grid implicito con columns</h1>
+			<div class="Grid-container3"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 columns</div>
+				<div class="Grid-item">20 columns</div>
+				<div class="Grid-item">21 columns</div>
+			</div>
+			<br>
+			<p class="ColorBlanco">Imagen sin atributo dense</p>
+			<img src="img/Grid/dense.PNG"><br>
+
+
+
+			<h1 class="h3">grid-auto-flow: dense</h1>
+			<p class="ColorBlanco">La propiedad grid-auto-flow: dense nos permite rellenar los espacios</p>
+			<div class="Grid-container4"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 </div>
+				<div class="Grid-item">20 </div>
+				<div class="Grid-item">21 </div>
+			</div>
+			<br>
+			
+
+
+				
+
+
 		</article>
 				
 

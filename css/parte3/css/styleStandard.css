@@ -16,6 +16,7 @@ body{padding-top: 30px;}
     position:fixed;  
     margin: -150px; /*con el margin subimos el nav*/ 
     margin-left: 0px;
+    z-index: 10;
 
 }
 
@@ -67,7 +68,7 @@ article{margin: 40px 60px;}
     border: 3px solid #fafafa10;
     margin: 0 auto;
     border-radius: 1rem;
-    z-index: 10;
+    z-index: 0;
 }
 
 .glass-effect{
