@@ -43,7 +43,14 @@
 			<h1 class="h1" id="inicio">GRID IMPLICITO Y EXPLICITO</h1>
 		<article>
 			<br>
-				<p class="ColorBlanco">El grid implicito es:</p>
+				<p class="ColorBlanco">Cuando trabajamos con CSS Grid, es posible definir la grilla de dos maneras: explícita e implícita. <br> Cada vez que nosotros definimos la cantidad de columnas o filas que tendrá la grilla, sin importar que tamaño tengan, estamos definiendo el grid de manera explícita, como en el ejemplo que puedes ver a continuación donde definimos que la grilla tendrá 12 columnas que se dividen el espacio equitativamente:<br><br>
+				grid-template-columns: repeat(12,1fr);<br><br>
+				Suponiendo que colocamos más de 12 elementos de la grilla, superando la cantidad de columnas establecidas. En dicho escenario, se creará una nueva fila para colocar los elementos que no cupieron en la primera fila. Esta segunda fila no fue definida explícitamente, por lo que se considera parte del grid implícito.<br><br>
+
+
+				</p>
+
+
 
 
 
