@@ -28,7 +28,7 @@ ul{
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     
     /*Lo que le queramos cambiar*/
-	.form-img { min-width: 100px;  max-width: 100%; text-align: center;}/*Formulario de imagen */ 
+	.form-img { min-width: 300px;  max-width: 100%; text-align: center;}/*Formulario de imagen */ 
 
 }
 
