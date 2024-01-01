@@ -7,14 +7,19 @@ body{
 .form-img { /*Formulario de imagen*/
     flex:1;
     display: flex;
-    min-width: 400px; 
+    min-width: 300px; 
     max-width: 100%;
-	border: #080808 solid;
+	
     
 } 
 
+.img-container{
+    margin: auto;  
+	border: #4206CF solid;
+}
+
 ul{
-	margin: 10px;
+	margin: 5px;
 }
 
 
@@ -28,13 +33,14 @@ ul{
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     
     /*Lo que le queramos cambiar*/
-	.form-img { min-width: 300px;  max-width: 100%; text-align: center;}/*Formulario de imagen */ 
+	.form-img { min-width: 200px;  max-width: 100%; text-align: center;}/*Formulario de imagen */ 
+	
 
 }
 
-@media only screen and (max-width:300px){
+@media only screen and (max-width:400px){
     
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     /*Lo que le queramos cambiar*/
-    
+    .form-img { min-width: 200px;  max-width: 100%; text-align: center;}/*Formulario de imagen */ 
 }

@@ -27,8 +27,8 @@ body{padding-top: 30px;}
 .nav__li { display: inline-block; padding: 12px;} /*ponemos links en misma fila y separacion*/ 
 .nav__li a{color: #fff; text-decoration: none;} /*color blanco texto y sin decoracion*/ 
 .nav__li:hover > a{color: #bbb;}/*cuando pase por texto cambia de color*/
-section{margin: 40px 60px;}
-article{margin: 40px 60px;}
+.section{margin: 40px 60px;}
+.article{margin: 40px 60px;}
 .footer{ padding: 20px 20px; color: #fff; background: #378a53; text-align: center; width: 100%; }
 
 
