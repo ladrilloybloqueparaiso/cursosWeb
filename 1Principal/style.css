@@ -9,6 +9,7 @@ body{
     display: flex;
     min-width: 400px; 
     max-width: 100%;
+	border: #080808 solid;
     
 } 
 
@@ -16,10 +17,7 @@ ul{
 	margin: 10px;
 }
 
-.body{
-	width: 5px;
-	height: 5px;
-}
+
 
 .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
 
