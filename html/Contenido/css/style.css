@@ -20,6 +20,10 @@ ul{
 }
 
 
+
+
+
+
 .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
 
 
@@ -29,7 +33,6 @@ ul{
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     /*Lo que le queramos cambiar*/
 	.form-img { min-width:200px;  max-width:100%;}/*Formulario de imagen */ 
-
 }
 
 @media only screen and (max-width:300px){
