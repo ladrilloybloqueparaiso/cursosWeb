@@ -18,11 +18,12 @@ body{
 ul{
 	margin: 10px;
 }
-
 img{
-	height: 500px;
-	width: 500px;
+	max-width: 300px;
+	max-height: 300px;
 }
+
+
 
 
 .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
@@ -34,6 +35,7 @@ img{
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     /*Lo que le queramos cambiar*/
 	.form-img { min-width:200px;  max-width:100%;}/*Formulario de imagen */ 
+	img{max-width: 200px; max-height: 200px;}
 }
 
 @media only screen and (max-width:300px){
@@ -41,5 +43,6 @@ img{
     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
     /*Lo que le queramos cambiar*/
     .form-img { min-width: 100px;  max-width: 100%;}/*Formulario de imagen */ 
+	img{max-width: 100px; max-height: 100px;}
 }
 
