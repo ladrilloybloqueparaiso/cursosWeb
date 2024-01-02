@@ -1,7 +1,4 @@
 
-
-
-
 @media only screen and (max-width:600px) {
 
     /*estilos----------------------------------------------------------------------------*/
@@ -17,7 +14,7 @@
     .nav__responsive{
         padding-top: 120px; /*Bajamos el nav*/ 
         width: 100%;   /*Anchura muy grande para rellenar*/ 
-       /* background:#378a53; */
+       background:#378a53; 
         position:fixed;  
         margin: -150px; /*con el margin subimos el nav*/ 
         margin-left: 0px;
@@ -46,7 +43,7 @@
         z-index: 1;
         width: 50%; /*Este es el tamaño del contenedor*/
         padding-top: -20px;
-        background:#fafafa10;
+        background:#242222f8;
         
     }
     .nav__responsive-li{ /*Modificamos todas las clases de li ubicadas dentro del nav__responsive*/
@@ -90,7 +87,7 @@
     .nav__responsive{
         padding-top: 120px; /*Bajamos el nav*/ 
         width: 100%;   /*Anchura muy grande para rellenar*/ 
-       /* background:#378a53; */
+       background:#378a53; 
         position:fixed;  
         margin: -150px; /*con el margin subimos el nav*/ 
         margin-left: 0px;
@@ -119,7 +116,7 @@
         z-index: 1;
         width: 50%; /*Este es el tamaño del contenedor*/
         padding-top: -20px;
-        background:#fafafa10;
+        background:#1a1919;
         
     }
     .nav__responsive-li{ /*Modificamos todas las clases de li ubicadas dentro del nav__responsive*/

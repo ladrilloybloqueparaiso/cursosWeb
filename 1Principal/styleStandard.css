@@ -25,7 +25,7 @@ body{padding-top: 30px;}
 .nav{
     padding-top: 120px; /*Bajamos el nav*/ 
     width: 100%;   /*Anchura muy grande para rellenar*/ 
-    background:#378a53;
+    background:#0a0e0b;
     position:fixed;  
     margin: -150px; /*con el margin subimos el nav*/ 
     margin-left: 0px;
