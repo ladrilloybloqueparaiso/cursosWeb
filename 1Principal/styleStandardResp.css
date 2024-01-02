@@ -76,7 +76,14 @@
     .h2{text-align: justify; color: orange; font-size: 20px;}
     .h3{text-align: justify; color: green; font-size: 15px; }
     p{text-align: justify; font-size: 10px;}
+
+
     .ColorBlanco{ color: #fff;}
+    .ColorNegro{ color: #050404;}
+
+    .fondoVerde{background: #378a53;}
+    .fondoNegro{background: #131614;}
+    .fondoBlanco{background: #fff;}
 
 
 
