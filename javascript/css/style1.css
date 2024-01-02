@@ -19,6 +19,11 @@ ul{
 	margin: 10px;
 }
 
+img{
+	height: 500px;
+	width: 500px;
+}
+
 
 .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
 
