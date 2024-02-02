@@ -1,0 +1,56 @@
+body{
+    background: radial-gradient(circle, #1a83d8,#0407a7);/*Le damos un fondo diferente a la pagina*/
+    
+   }
+   section{
+      margin: 0;
+   }
+
+    .Grid-header{
+        background-color: #f96;
+    }
+	.Grid-main{
+        background-color: #96f;
+    }
+	.Grid-aside{
+        background-color: #999;
+    }
+	.Grid-footer{
+        background-color: #6f9;
+    }
+   
+   .Grid-container{     /*Con grid para el justiy items y align items*/
+       display: grid;   
+       margin: 10px;
+       border: 3px #000 solid;
+       background-color: #444;
+       grid-gap: 10px;
+       z-index: 10; 
+   
+       grid-auto-rows: 100px; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+   }
+
+
+   /*Con first child modificamos la imagen 1*/
+
+   /*vamos a modificar la primera grilla con color rojo y vamos a decir que ocupe de la linea 1 a la 3 en espacio que serian 
+   dos cajas*/
+   
+   
+   .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   
+   @media only screen and (max-width:600px){
+   
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       
+       /*Lo que le queramos cambiar*/
+       
+   }
+   
+   @media only screen and (max-width:300px){
+       
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+       
+   }

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
 	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
-	<link rel="stylesheet" type="text/css" href="css/styleAlineacionYcontroldeflujo2.css">
+	<link rel="stylesheet" type="text/css" href="css/styleGrid-area.css">
 	<title>Alineacion y control de flujo</title>
 </head>
 <body  >
@@ -22,9 +22,6 @@
 				   <li class="nav__li"><a href="#1">justify-items</a> </li>
 				   <li class="nav__li"><a href="#2">align-items</a> </li>
 				   <li class="nav__li"><a href="#3">justify-content</a> </li>
-				   <li class="nav__li"><a href="#4">align-content</a> </li>
-				   <li class="nav__li"><a href="#5">conversion de content</a> </li>
-				   <li class="nav__li"><a href="#6">conversion items y content</a> </li>
 				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
 			   </ul> 
 			   <ul class="nav__responsive-ul">                                                  
@@ -36,7 +33,9 @@
 						<li class="nav__responsive-li"> <a href="#3">justify-content</a> </li>   
 						<li class="nav__responsive-li"> <a href="#4">align-content</a> </li>  
 						<li class="nav__responsive-li"> <a href="#5">conversion de content</a> </li>  
-						<li class="nav__responsive-li"> <a href="#6">conversion items y content</a> </li>  
+						<li class="nav__responsive-li"> <a href="#6">conversion items y content</a> </li> 
+						<li class="nav__responsive-li"> <a href="#7">space en content</a> </li> 
+						<li class="nav__responsive-li"> <a href="#8">Aplicado al grid-item</a> </li>   
 						<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
 					</div>
 			   </ul>
@@ -44,58 +43,22 @@
 	</header>
 
 	<section class="background-containerImg" >
-	
-
-			<h1 class="h1" id="inicio">Alineación y control de flujo 2</h1>
+		
+		<h1 class="h1" id="inicio">Grid area</h1>
 		<article class="glass-effect">
 			<br>
+			<p class="ColorBlanco marginText">
+				Primero vamos a definir el header, el main, el aside y el footer.<br>
+				Para trabajar con areas en vez de utilizar  grid-template-columns y  grid-template-rows utilizamos  grid-template-areas.
 
-
-				<p class="ColorBlanco">Tenemos dos tipos de alineación: <br></p> 
-				<p class="ColorBlanco marginText">
-
-					justify-content y align-content tienen las mismas propiedades que flex:<br>
-					*space-around<br>
-					*space-between<br>
-					*space-evenly<br> 
-
-				</p>
-
-				<p class="ColorBlanco marginText">Vamos a alinear horizontalmente las grillas con justify-items.</p>
-									
-				<h1 class="h2" id="1">Justify-items</h1>
-				<h1 class="h3"> flex-start o start</h1>
-				<div class="Grid-container Justify-items-flex-start"> 
-					<div class="Grid-item">1</div>
-					<div class="Grid-item">2</div>
-					<div class="Grid-item">3</div>
-					<div class="Grid-item">4</div>
-					<div class="Grid-item">5</div>
-					<div class="Grid-item">6</div>
-					<div class="Grid-item">7</div>
-					<div class="Grid-item">8</div>
-					<div class="Grid-item">9</div>	
-				</div>
-				<br>
-				
-<!-------------------------------------------------------------------------------------------------------------------------------------->
-				
-			<h1 class="h3"> Convinaciones de justify items, content  end <br> y align items, content con start</h1>
-				<div class="Grid-container3 Justify-items-flex-end align-items-flex-end Justify-content-flex-start align-content-flex-start heigh">  <!--Heigh para ver cambios en align-content-->
-					<div class="Grid-item">1</div>
-					<div class="Grid-item">2</div>
-					<div class="Grid-item">3</div>
-					<div class="Grid-item">4</div>
-					<div class="Grid-item">5</div>
-					<div class="Grid-item">6</div>
-					<div class="Grid-item">7</div>
-					<div class="Grid-item">8</div>
-					<div class="Grid-item">9</div>	
-				</div>
-				<br>
-
-		</article> 	
-				
+			</p>
+			<div class="Grid-container">
+				<div class="Grid-item Grid-header">header</div>
+				<div class="Grid-item Grid-main">main</div>
+				<div class="Grid-item Grid-aside">aside</div>
+				<div class="Grid-item Grid-footer">footer</div>
+			</div>
+		</article>
 
 	</section>
 
