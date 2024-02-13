@@ -1,0 +1,95 @@
+body{
+    background: radial-gradient(circle, #10997b,#305326);   
+}
+section{
+   margin: 0;
+}
+
+.container{
+    background: #121116;
+    padding: 30px 5px;
+}
+.caja{
+    background-color: #fbfdfd;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    display: flex;     
+}
+
+
+
+/*Transform*/
+
+/*Primera propiedad traslate. Con traslate podemos moverla para donde queramos*/
+.traslateX{transform: translatex(50px);} /*Con esta propiedad lo movemos  a la derecha 50px en el eje x*/
+.traslate-X{transform: translatex(-50px);} /*Con esta propiedad lo movemos  a la izquierda 50px en el eje x*/
+.traslateY{transform: translateY(50px);} /*Con esta propiedad lo movemos  a abajo 50px en el eje Y*/
+.traslate-Y{transform: translateY(-50px);} /*Con esta propiedad lo movemos  a arriba 50px en el eje Y*/
+
+/*La segunda es scale*/
+.scaleX{transform: scaleX(2);}  /*Con esta propiedad modificamos el tamaño en el eje x (2) dos es el tamaño a modificar*/
+.scaleY{transform: scaleY(2);}  /*Con esta propiedad modificamos el tamaño en el eje x (2) dos es el tamaño a modificar*/
+
+
+.transition{transition: transform 1s ;}
+
+.caja:hover{
+    transform: scaleX(2);
+    background-color: #10997b;
+}
+
+.caja2{
+    background-color: #44bbbb;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    display: flex;     
+}
+
+.caja2:hover{
+    transform: scaleY(2);
+    background-color: #10997b;
+}
+
+b{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }
