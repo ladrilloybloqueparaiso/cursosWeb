@@ -6,6 +6,7 @@
 p{text-align: justify; font-size: 20px;}
 .ColorBlanco{ color: #fff;}
 .marginText{margin: 20px 40px;}
+.padding{ padding: 20px; padding-bottom: 80px;}
 
 .separador{padding-top: -100px;}/*Con esto subimos el separador*/
 body{padding-top: 30px;} 
@@ -56,6 +57,7 @@ article{margin: 40px 60px;}
     display:flex;
     align-items: center;
 
+
     /*(https://images.pixexid.com/a-4k-ultra-hd-wallpaper-of-a-futuristic-cityscape-at-night-with-neon-lights-ill-u12ywmlh.jpeg)
     /*(https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg)*/
     
@@ -75,4 +77,5 @@ article{margin: 40px 60px;}
     background:#fafafa10;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
+    
 }

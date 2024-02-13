@@ -39,7 +39,7 @@ section{
     height: 70px;
     width: 70px;
     transition-property: left background;  /*con la transision se mueve a la izquierda y cambia de color */
-    transition-duration: 3s, 3s;  /*el 3s es la duracion del movimiento(left y el 1s es la duracion del cambio de color background)*/  
+    transition-duration: 3s 1s;  /*el 3s es la duracion del movimiento(left y el 1s es la duracion del cambio de color background)*/  
     margin: 20px;
     border: 1px #fbfdfd solid;
     position: relative;
