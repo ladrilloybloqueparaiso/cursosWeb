@@ -8,86 +8,63 @@ section{
 .container{
     background: #121116;
     padding: 30px 5px;
-}
-.caja{
-    background-color: #fbfdfd;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    display: flex;     
+    width: 200px;
+    height:200px;
+    margin: 40px;    
 }
 
 
 
-/*Transform*/
-
-/*Primera propiedad traslate. Con traslate podemos moverla para donde queramos*/
-.traslateX{transform: translatex(50px);} /*Con esta propiedad lo movemos  a la derecha 50px en el eje x*/
-.traslate-X{transform: translatex(-50px);} /*Con esta propiedad lo movemos  a la izquierda 50px en el eje x*/
-.traslateY{transform: translateY(50px);} /*Con esta propiedad lo movemos  a abajo 50px en el eje Y*/
-.traslate-Y{transform: translateY(-50px);} /*Con esta propiedad lo movemos  a arriba 50px en el eje Y*/
-
-/*La segunda es scale*/
-.scaleX{transform: scaleX(2);}  /*Con esta propiedad modificamos el tamaño en el eje x (2) dos es el tamaño a modificar*/
-.scaleY{transform: scaleY(2);}  /*Con esta propiedad modificamos el tamaño en el eje x (2) dos es el tamaño a modificar*/
-
-
-.transition{transition: transform 1s ;}
-
-.caja1{
-    background-color: #fbfdfd;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    display: flex;     
-}
-.caja1:hover{
-    transform: scaleX(2);
-    background-color: #10997b;
+.container2{
+    padding: 30px;
+    background: #398; 
+    width: 400px;
+    height:300px;
+    margin: 80px;  
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7t4JlhrklVfPLws-tb0lH1SPi-pZ18Pegjg&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+    border: 10px solid transparent;
 }
 
-.caja2{
-    background-color: #44bbbb;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    display: flex;     
+
+
+.image{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7t4JlhrklVfPLws-tb0lH1SPi-pZ18Pegjg&usqp=CAU);}
+.size{background-size: 50%;}
+.contain{background-size:contain;}
+.no-repeat{background-repeat: no-repeat;}
+.cover{background-size: cover;}
+.border{border: 10px solid transparent;}
+.positionR-B{background-position:right bottom;}
+.positionR-T{background-position:right top;}
+.positionL-T{background-position:left top;}
+.positionL-B{background-position:left bottom;}
+.positionR-C{background-position:right center;}
+.positionL-C{background-position:left center;}
+.positionC-C{background-position:center center;}
+.positionC-T{background-position:center top;}
+.positionC-B{background-position:center bottom;}
+
+
+.container3{ /*background-attachment*/
+    padding: 30px;
+    background: #398; 
+    width: 100%;
+    height:300px ;
+    background-image: url(https://live.staticflickr.com/8241/8629475232_54ac74195a_b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.caja2:hover{
-    transform: scaleY(2);
-    background-color: #10997b;
-}
 
-.b{
-    margin: auto;
-    transform: skew(-30deg);
-}
 /*------------------------------------------------------------------------------------------------------------------------------*/
-.caja3{ background-color: #44bbbb; height: 100px; width: 100px; margin: 20px; display: flex; transition: transform 1s ;}
-
-.caja3:hover{
-    transform: skew(30deg);
-}
-
-.caja4{ background-color: #44bbbb; height: 100px; width: 100px; margin: 20px; display: flex; transition:transform 1s ; transform: skew(30deg);}
 
 
 
-.objeto{ background-color: #839923; height: 100px; width: 100px; margin: 20px; display: flex; transition:transform 1s;}
 
-.triangulo{ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);}
-
-.circulo{ clip-path: circle(50% at 50% 50%);}
-
-.mensaje{ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);}
-
-.flechaRight{clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);}
-
-.cruz{clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
-}
-
-.rombo{clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
 
 
 
