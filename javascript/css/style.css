@@ -1,8 +1,4 @@
-
-
-body{
-	background: #E5D620; /*Le damos un fondo diferente a la pagina*/
-}
+body{background: radial-gradient(circle, #d1f020,#425326);}
 
 .form-img { /*Formulario de imagen*/
     flex:1;
@@ -23,23 +19,99 @@ ul{
 
 
 
-.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
 
 
 
-@media only screen and (max-width:600px){
 
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
-    /*Lo que le queramos cambiar*/
-	.form-img { min-width:200px;  max-width:100%;}/*Formulario de imagen */ 
-	img{max-width: 200px; max-height: 200px;}
+
+
+
+ 
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*clases para pagina con flex*/
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+}
+.Header, .Main, .Aside, .Footer {                   
+    padding: 20px;
 }
 
-@media only screen and (max-width:300px){
-    
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
-    /*Lo que le queramos cambiar*/
-    .form-img { min-width: 100px;  max-width: 100%;}/*Formulario de imagen */ 
-	img{max-width: 100px; max-height: 100px;}
+
+.Header{
+    background-color: #050607;
+    flex-basis: 60px;    /*ver leccion 24 propiedad de los items*/
+}
+.Main{ 
+    background-color: #c3c3c5;
+    flex-basis: 300px;   /*ver leccion 24 propiedad de los items*/
+    flex-grow: 2;        /*ver leccion 24 propiedad de los items*/
+    flex-shrink: 0;      /*ver leccion 24 propiedad de los items*/
+}
+.Aside{
+    background-color: #6a777a;
+    flex-basis: 200px;    /*ver leccion 24 propiedad de los items*/
+    flex-grow: 1;         /*ver leccion 24 propiedad de los items*/
+    flex-shrink: 0;       /*ver leccion 24 propiedad de los items*/
+}
+.Footer{
+    background-color: #101c20;
+    flex-grow: 1;               /*ver leccion 24 propiedad de los items*/
+}
+ 
+ 
+ 
+ 
+ .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+ 
+ /*---------------------------------------------------------------------------------------------------------------*/
+
+ 
+/*Para Flex*/
+@media screen and (min-width: 700px) {   /*Como va a verse la pagina con menos de 700px*/
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Header{
+        flex-basis: 100%;
+        max-height: 100px;
+    }
+    .Main{
+        flex-grow: 4;
+    }
+    .Aside{
+        flex-grow: 1;
+    }
+    .Footer{
+        flex-basis: 100%;  
+    }
+    .Main, .aside{
+        height: 1500px;
+    }
 }
 
+
+
+
+
+
+
+
+ @media only screen and (max-width:600px){
+ 
+     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+     /*Lo que le queramos cambiar*/
+     .form-img { min-width:200px;  max-width:100%;}/*Formulario de imagen */ 
+     img{max-width: 200px; max-height: 200px;}
+ }
+ 
+ @media only screen and (max-width:300px){
+     
+     .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+     /*Lo que le queramos cambiar*/
+     .form-img { min-width: 100px;  max-width: 100%;}/*Formulario de imagen */ 
+     img{max-width: 100px; max-height: 100px;}
+ }
