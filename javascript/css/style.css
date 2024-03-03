@@ -1,4 +1,4 @@
-body{background: radial-gradient(circle, #d1f020,#425326);}
+body{background: radial-gradient(circle, #d1f020,#678d29);}
 
 .form-img { /*Formulario de imagen*/
     flex:1;
@@ -15,19 +15,8 @@ ul{
 	margin: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
  
-.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*clases para pagina con flex*/
 .content{
@@ -39,19 +28,20 @@ ul{
     padding: 20px;
 }
 
-
 .Header{
-    background-color: #050607;
     flex-basis: 60px;    /*ver leccion 24 propiedad de los items*/
+    background-color: #0a1518;
+    
 }
+
 .Main{ 
-    background-color: #c3c3c5;
+    background: radial-gradient(circle, #d1f020,#678d29);
     flex-basis: 300px;   /*ver leccion 24 propiedad de los items*/
     flex-grow: 2;        /*ver leccion 24 propiedad de los items*/
     flex-shrink: 0;      /*ver leccion 24 propiedad de los items*/
 }
 .Aside{
-    background-color: #6a777a;
+    background-color: #0a1518;
     flex-basis: 200px;    /*ver leccion 24 propiedad de los items*/
     flex-grow: 1;         /*ver leccion 24 propiedad de los items*/
     flex-shrink: 0;       /*ver leccion 24 propiedad de los items*/
@@ -64,7 +54,7 @@ ul{
  
  
  
-
+.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
  
  /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -77,8 +67,19 @@ ul{
     }
     .Header{
         flex-basis: 100%;
-        max-height: 100px;
+
+        padding-top: 120px; /*Bajamos el nav*/ 
+        width: 100%;   /*Anchura muy grande para rellenar*/ 
+            
+        background-color: #101c20;
+        position:fixed;  
+        margin: -150px; /*con el margin subimos el nav*/ 
+        margin-left: 0px;
+        z-index: 10;
+                
     }
+
+    body{padding-top: 30px;} 
     .Main{
         flex-grow: 4;
     }

@@ -6,6 +6,7 @@
 p{text-align: justify; font-size: 20px;}
 .ColorBlanco{ color: #fff;}
 .marginText{margin: 20px 40px;}
+.marginSection{margin: 40px 60px;}
 
 .separador{padding-top: -100px;}/*Con esto subimos el separador*/
 /*body{padding-top: 30px;} */
@@ -27,7 +28,10 @@ p{text-align: justify; font-size: 20px;}
 .nav__li a{color: #fff; text-decoration: none;} /*color blanco texto y sin decoracion*/ 
 .nav__li:hover > a{color: #bbb;}/*cuando pase por texto cambia de color*/
 section{margin: 40px 60px;}
+
 article{margin: 40px 60px;}
+
+
 .footer{ padding: 20px 20px; color: #fff; background: #378a53; text-align: center; width: 100%; }
 
 
@@ -75,3 +79,39 @@ article{margin: 40px 60px;}
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
 }
+
+.form__input{
+    width: 20%;
+    padding: 12px;
+    margin: 6px 0px;
+    border: 5px solid rgb(10, 14, 12);
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+}
+
+
+
+
+
+/*DiseÃ±o del boton*/
+.form input[type="button"]{
+    background-color: rgb(9, 6, 10);
+    border: 3px solid green;
+    padding: 12px;
+}
+
+.form input[type="button"]:hover{
+    background-color: rgb(56, 55, 56);
+   
+    padding: 12px;
+}
+
+.form input[type="button"]:focus{
+    background-color: rgb(84, 117, 99);   
+}
+
+
+
+/*.form input[type="button"]:active{
+    background-color: linear-gradient(to bottom, #072, #050);;  
+}*/
